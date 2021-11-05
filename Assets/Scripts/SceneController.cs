@@ -1,37 +1,37 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
-public class SceneController : MonoBehaviour
-{
-    [SerializeField] List<Object> gameScenes;
+public class SceneController : MonoBehaviour {
+    [SerializeField] private List<Object> gameScenes;
 
-    public void SwitchScene(GameState state)
-    {
+    public void SwitchScene(GameState state) {
         //Switch scenes
-        switch(state)
-        {
+        switch (state) {
             case GameState.Empty:
-            break;
+                break;
             case GameState.Menu:
                 StartScene(gameScenes[0].name);
-            break;
+                break;
             case GameState.Crime:
                 StartScene("CrimeScene");
-            break;
+                break;
             case GameState.Court:
                 StartScene("CourtScene");
-            break;
+                break;
             case GameState.Ending:
                 StartScene("Ending");
-            break;
+                break;
+            default:
+                throw new Exception("Incorrect game state!");
         }
     }
-    public void StartScene(string scene_name)
-    {
-        Debug.Log("Starting scene - " + scene_name);
-        SceneManager.LoadScene(scene_name, LoadSceneMode.Single);
-        Debug.Log(scene_name + " - scene is loaded");
+
+    private static void StartScene(string sceneName) {
+        Debug.Log("Starting scene - " + sceneName);
+        SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
+        Debug.Log(sceneName + " - scene is loaded");
     }
 }
