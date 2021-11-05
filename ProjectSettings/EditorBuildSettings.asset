@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/G.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 1808a122f49a76d4f9f2c2a4fe6bc2b6
+  - enabled: 1
+    path: Assets/Scenes/CrimeScene.unity
+    guid: fa1db4084e671e94b9ff6f5b4f5e8bcd
+  - enabled: 1
+    path: Assets/Scenes/CourtScene.unity
+    guid: 5db1e8f87dd392849bf329816d078a02
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 14629127a64210f45acb91bef1c50b78
   m_configObjects: {}
