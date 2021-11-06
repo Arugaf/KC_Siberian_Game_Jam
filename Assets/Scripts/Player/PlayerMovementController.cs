@@ -3,6 +3,7 @@ using UnityEngine;
 namespace Player {
     public class PlayerMovementController : MonoBehaviour {
         [SerializeField] private Rigidbody playerRigidbody;
+        private SpriteRenderer _spriteRenderer;
 
         private float _verticalMove;
         private float _horizontalMove;
@@ -18,11 +19,22 @@ namespace Player {
 
         public void Start() {
             playerRigidbody = GetComponent<Rigidbody>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
         public void Update() {
             _verticalMove = Input.GetAxisRaw("Vertical");
             _horizontalMove = Input.GetAxisRaw("Horizontal");
+
+            {
+                if (_horizontalMove > 0) {
+                    _spriteRenderer.flipX = false;
+                }
+
+                if (_horizontalMove < 0) {
+                    _spriteRenderer.flipX = true;
+                }
+            }
         }
 
         public void FixedUpdate() {
@@ -36,10 +48,5 @@ namespace Player {
             playerRigidbody.velocity =
                 Vector3.SmoothDamp(currentPlayerVelocity, _playerVelocity, ref _velocity, movementSmoothing);
         }
-
-        // todo: camera
-        // todo: scale
-        // todo: inventory
-        // todo: items
     }
 }
