@@ -8,7 +8,9 @@ public class Crime : MonoBehaviour {
     }
 
     public void ChangeState() {
-        _g.CurrentState = GameState.Court;
-        _g.sceneController.SwitchScene(_g.CurrentState);
+        if(_g != null) {
+            _g.CurrentState = GameState.Court;
+            _g.sceneController.SwitchScene(_g.CurrentState);
+        }
     }
 }
