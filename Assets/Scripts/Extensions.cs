@@ -4,12 +4,11 @@ using System.Collections.Generic;
 public enum Emotion {
         Neutral,
         Happy,
-        Angry,
         Sad
     }
 
 [System.Serializable] 
-public struct Phrase_t {
+public class Phrase_t {
     public int ID;
     public string author; // speaker's name 
     public List<string> text;
@@ -21,7 +20,7 @@ public struct Item_t {
     public int ID;
     public string name; // speaker's name 
     public string description;
-    public string imageFilePath;
+    public string icon;
     public int phrase;
 }
 

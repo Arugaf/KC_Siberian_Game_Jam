@@ -26,7 +26,8 @@ public class DialogManager : MonoBehaviour {
 
     public void ShowPhrase(int id) {
         var currentPhrase = phrases.Find(item => item.ID.Equals(id));
-
+        if(currentPhrase == null)
+            Debug.LogError("Phrase - " + id + " can't be found");
         UpdateText(currentPhrase);
         UpdateActor(currentPhrase.emotion);
     }
