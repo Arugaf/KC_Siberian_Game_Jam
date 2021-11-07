@@ -17,6 +17,7 @@ public class Court : MonoBehaviour {
     private Inventory_t inventory = new Inventory_t();
 
     public void Start() {
+        Debug.Log("");
         _g = FindObjectOfType<G>();
     }
 
