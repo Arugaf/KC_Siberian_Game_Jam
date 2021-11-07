@@ -3,12 +3,35 @@
     "ID": 1,
     "name": "Item 1",
     "description": "This is an item 1",
-    "icon": "/path/to/icon.png"
+    "icon": "Sprites/icon",
+    "phrase": 2
 },
 {
     "ID": 2,
-    "name": "Actor 2",
+    "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "/path/to/icon.png"
+    "icon": "Sprites/icon",
+    "phrase": 2
+},
+{
+    "ID": 3,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/icon",
+    "phrase": 2
+},
+{
+    "ID": 4,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/icon",
+    "phrase": 2
+},
+{
+    "ID": 5,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/icon",
+    "phrase": 2
 }
 ]
