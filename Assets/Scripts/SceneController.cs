@@ -15,6 +15,9 @@ public class SceneController : MonoBehaviour {
             case GameState.Menu:
                 StartScene(gameScenes[0].name);
                 break;
+            case GameState.Intro:
+                StartScene("Intro");
+                break;
             case GameState.Crime:
                 StartScene("CrimeScene");
                 break;

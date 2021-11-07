@@ -8,6 +8,8 @@ namespace Items {
         [SerializeField] private Sprite onTriggerSprite;
         private Sprite _oldSprite;
 
+        [SerializeField] private RectTransform thoughtsObject;
+
         public void Start() {
             _oldSprite = spriteRenderer.sprite;
         }
@@ -17,14 +19,17 @@ namespace Items {
                 return;
             }
 
+            thoughtsObject.gameObject.SetActive(true);
             spriteRenderer.sprite = onTriggerSprite;
         }
 
         public void OnTriggerExit(Collider other) {
+            thoughtsObject.gameObject.SetActive(false);
             spriteRenderer.sprite = _oldSprite;
         }
 
         public void DestroyItem() {
+            thoughtsObject.gameObject.SetActive(false);
             Destroy(transform.parent.gameObject);
         }
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 public enum GameState {
     Empty,
     Menu,
+    Intro,
     Crime,
     Court,
     Ending

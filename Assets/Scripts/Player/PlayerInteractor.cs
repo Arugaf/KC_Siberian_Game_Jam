@@ -8,6 +8,8 @@ namespace Player {
 
         private Crime _crimeScene;
 
+        [SerializeField] private RectTransform courtTime;
+
         public void Start() {
             _inventory = FindObjectOfType<PlayerInventory>();
             _crimeScene = FindObjectOfType<Crime>();
@@ -18,8 +20,8 @@ namespace Player {
         }
 
         public void Update() {
-            if (Input.GetKeyDown("tab") && _inventory.IsFull()) {
-                _crimeScene.ChangeState();
+            if (_inventory.IsFull()) {
+                courtTime.gameObject.SetActive(true);
             }
             
             if (!Input.GetKeyDown("e") || !_item) {

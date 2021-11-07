@@ -2,6 +2,8 @@ using UnityEngine;
 
 namespace Player {
     public class PlayerMovementController : MonoBehaviour {
+        [SerializeField] private Animator animator;
+        
         [SerializeField] private Rigidbody playerRigidbody;
         private SpriteRenderer _spriteRenderer;
 
@@ -38,6 +40,12 @@ namespace Player {
         }
 
         public void FixedUpdate() {
+            if (_verticalMove >= 0.1 || _verticalMove <= -0.1 || _horizontalMove >= 0.1 || _horizontalMove <= -0.1) {
+                animator.SetFloat("Speed", 1);
+            } else {
+                animator.SetFloat("Speed", 0);
+            }
+
             var currentPlayerVelocity = playerRigidbody.velocity;
 
             _playerVelocity = new Vector3(
