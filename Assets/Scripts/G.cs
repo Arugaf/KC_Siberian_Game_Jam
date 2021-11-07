@@ -1,3 +1,4 @@
+using Player;
 using UnityEngine;
 
 public enum GameState {
@@ -13,10 +14,13 @@ public class G : MonoBehaviour {
 
     public GameState CurrentState { set; get; }
 
+    public PlayerInventory inventory;
+
     public void Start() {
         DontDestroyOnLoad(this);
 
         sceneController = GetComponent<SceneController>();
+        inventory = GetComponent<PlayerInventory>();
 
         //looks silly
         CurrentState = GameState.Menu;

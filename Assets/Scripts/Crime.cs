@@ -1,7 +1,10 @@
+using Items;
 using UnityEngine;
 
 public class Crime : MonoBehaviour {
     private G _g;
+
+    public InventoryUI inventory;
 
     public void Start() {
         _g = FindObjectOfType<G>();
