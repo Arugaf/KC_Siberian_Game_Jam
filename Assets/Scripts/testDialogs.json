@@ -1,0 +1,17 @@
+[
+{
+    "ID": 1,
+    "author": "Actor 1",
+    "text": [
+        "Text 1"
+    ]
+},
+{
+    "ID": 2,
+    "author": "Actor 2",
+    "text": [
+        "Text 2",
+        "Another text"
+    ]
+}
+]

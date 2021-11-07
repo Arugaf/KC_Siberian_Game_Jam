@@ -8,7 +8,9 @@ public class Menu : MonoBehaviour {
     }
 
     public void ChangeState() {
-        _g.CurrentState = GameState.Crime;
-        _g.sceneController.SwitchScene(_g.CurrentState);
+        if(_g != null) {
+            _g.CurrentState = GameState.Crime;
+            _g.sceneController.SwitchScene(_g.CurrentState);
+        }
     }
 }
