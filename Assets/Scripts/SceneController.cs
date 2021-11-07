@@ -25,7 +25,7 @@ public class SceneController : MonoBehaviour {
                 StartScene("Ending");
                 break;
             default:
-                throw new Exception("Incorrect game state!");
+                throw new Exception("Incorrect game state! " + state);
         }
     }
 

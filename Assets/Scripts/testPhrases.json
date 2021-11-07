@@ -1,0 +1,34 @@
+[
+{
+    "ID": 1,
+    "author": "Actor 1",
+    "text": [
+        "Phrase 1"
+    ],
+    "emotion": 0
+},
+{
+    "ID": 2,
+    "author": "Actor 2",
+    "text": [
+        "Phrase 2",
+        "Another text"
+    ]
+},
+{
+    "ID": 3,
+    "author": "Actor 3",
+    "text": [
+        "Phrase 3",
+        "Another text"
+    ]
+},
+{
+    "ID": 4,
+    "author": "Actor 4",
+    "text": [
+        "Phrase 4",
+        "Another text"
+    ]
+}
+]

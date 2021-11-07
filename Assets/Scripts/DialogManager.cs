@@ -4,37 +4,48 @@ using UnityEngine;
 using TMPro;
 
 public class DialogManager : MonoBehaviour {
-    public Object dialogFile;
+    public Object phrasesFile;
+    public Object questionsFile;
+    public Object itemsFile;
+
+    // Key phrases ID's
+    public int guiltyID;
+    public int notGuiltyID;
+    public int startPhraseID;
+    public int firstPlayerPhraseID;
+    //__//
     [SerializeField] TMP_Text dialogField;
     [SerializeField] TMP_Text nameField;
-    List<Dialog_t> dialogs = new List<Dialog_t>();
-    int dialogIndex = 0;
+    [SerializeField] ActorController actor;
+    List<Phrase_t> phrases = new List<Phrase_t>();
     
     void Start() {
-        Dialog.LoadDialogsFromFile(dialogFile.name, ref dialogs);
-        Debug.Log("Load - " + dialogs.Count + " dialogs");
+        JsonLoader.LoadInfoFromFile(phrasesFile.name, ref phrases);
+        Debug.Log("Load - " + phrases.Count + " phrases");
     }
 
-    public void UpdateText(Dialog_t dialog) { 
-        nameField.text = dialog.author;
-        dialogField.text = dialog.text[0];
+    public void ShowPhrase(int id) {
+        var currentPhrase = phrases.Find(item => item.ID.Equals(id));
+
+        UpdateText(currentPhrase);
+        UpdateActor(currentPhrase.emotion);
     }
 
-    public void ResetDialog() { // TODO: refactor this
-        dialogIndex = 0;
-        dialogField.gameObject.SetActive(true);
-        nameField.gameObject.SetActive(true);
-        ShowNextDialog();
+    public void UpdateActor(Emotion _e) {
+        //update emotion images
+        actor.ChangeEmotion(_e);
     }
 
-    public void ShowNextDialog() { // TODO: refactor this
-        if(dialogIndex < dialogs.Count)
-            UpdateText(dialogs[dialogIndex++]);
-        else {
-            dialogField.gameObject.SetActive(false);
-            nameField.gameObject.SetActive(false);
-        }
+    public void UpdateText(Phrase_t phrase, int st = 0) { 
+        nameField.text = phrase.author;
+        dialogField.text = phrase.text[0];
     }
+
+    // public T FindByID<T>(List<T> list, int ID) {
+    //     return list.Find( item => item.ID.Equals(ID));
+    //     // if(res != null)
+    //     //     return res;
+    // }
 
 
 }
