@@ -21,7 +21,7 @@ public class G : MonoBehaviour {
         DontDestroyOnLoad(this);
 
         sceneController = GetComponent<SceneController>();
-        inventory = GetComponent<PlayerInventory>();
+        // inventory = GetComponent<PlayerInventory>();
 
         //looks silly
         CurrentState = GameState.Menu;

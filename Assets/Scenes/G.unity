@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneController: {fileID: 926799783}
-  inventory: {fileID: 0}
+  inventory: {fileID: 926799784}
 --- !u!4 &926799782
 Transform:
   m_ObjectHideFlags: 0
@@ -199,3 +199,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3f12dd848e4755a2380356526399d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  capacity: 5

@@ -293,7 +293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1312774116}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 8.74, z: 26.002}
 --- !u!65 &19534651
 BoxCollider:
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 19534649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 171836228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 9
@@ -1800,7 +1800,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 271408631}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 7
@@ -1992,7 +1992,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 308925649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 8
@@ -3610,12 +3610,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 894557933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  itemName: Tape
-  itemSprite: {fileID: 21300000, guid: 85327a8f6c2760e4c9e455ffdceaf00b, type: 3}
+  itemName: Oilcan
+  itemSprite: {fileID: 21300000, guid: b5d0b9ddc89479f4b8be5f648802a2cc, type: 3}
 --- !u!1 &897513779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,7 +4451,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1189746298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
@@ -4798,7 +4798,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1271165521}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
@@ -5108,8 +5108,8 @@ Transform:
   m_LocalPosition: {x: -6.19, y: 0.44, z: 0.34}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
-  - {fileID: 19534650}
   - {fileID: 1894911511}
+  - {fileID: 19534650}
   m_Father: {fileID: 1544642957}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5484,11 +5484,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1463230595}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  itemName: Oilcan
+  itemName: Item
   itemSprite: {fileID: 21300000, guid: b5d0b9ddc89479f4b8be5f648802a2cc, type: 3}
 --- !u!1 &1495899729
 GameObject:
@@ -6375,7 +6375,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768759378}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
@@ -6794,7 +6794,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1856745467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 68a4aae902b34a57b52960b6381098ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
@@ -6858,7 +6858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1312774116}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1894911512
 SpriteRenderer:
