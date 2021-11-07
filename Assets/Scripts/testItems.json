@@ -3,35 +3,35 @@
     "ID": 1,
     "name": "Item 1",
     "description": "This is an item 1",
-    "icon": "Sprites/icon",
+    "icon": "Sprites/Items/Axe",
     "phrase": 2
 },
 {
     "ID": 2,
     "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "Sprites/icon",
+    "icon": "Sprites/Items/Book",
     "phrase": 2
 },
 {
     "ID": 3,
     "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "Sprites/icon",
+    "icon": "Sprites/Items/Heart",
     "phrase": 2
 },
 {
     "ID": 4,
     "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "Sprites/icon",
+    "icon": "Sprites/Items/Tape",
     "phrase": 2
 },
 {
     "ID": 5,
     "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "Sprites/icon",
+    "icon": "Sprites/Items/Rope",
     "phrase": 2
 }
 ]

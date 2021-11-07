@@ -226,16 +226,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 85743272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b7c47bd81c0f584c95847f38a847962, type: 3}
+  m_Script: {fileID: 11500000, guid: 9721f95dbb1e95649a8f2ae6faa8b5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   phrasesFile: {fileID: 4900000, guid: f7baa38850ae62843b6a86e5d7bf9b56, type: 3}
   questionsFile: {fileID: 4900000, guid: 2eb8e742553f1874baa5c0d053abf3b0, type: 3}
   itemsFile: {fileID: 4900000, guid: 1a9d3904030b6924caea44314e230f5a, type: 3}
-  guiltyID: 3
-  notGuiltyID: 4
+  guiltyID: 1
+  notGuiltyID: 2
   startPhraseID: 1
-  firstPlayerPhraseID: 2
+  firstPlayerPhraseID: 1
   dialogField: {fileID: 2027597560}
   nameField: {fileID: 1871503941}
   actor: {fileID: 1745118064}
@@ -839,7 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.46226418, g: 0.46226418, b: 0.46226418, a: 1}
+  m_Color: {r: 0.6392157, g: 0.33333334, b: 0.21568629, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -850,12 +850,12 @@ MonoBehaviour:
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.48
 --- !u!222 &547989986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1474,8 +1474,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_Color: {r: 0.6392157, g: 0.33333334, b: 0.21568629, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1540,7 +1540,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 97cf6df4aa29a5842aa4a9450e694e09, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9167d0f4307a91b429af5663a6e5cfaa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2418,7 +2418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.4666667, g: 0.20392159, b: 0.10196079, a: 0.92156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3099,7 +3099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2147276101
 RectTransform:
   m_ObjectHideFlags: 0
