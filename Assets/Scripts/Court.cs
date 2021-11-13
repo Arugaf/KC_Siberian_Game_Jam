@@ -18,6 +18,7 @@ public class Court : MonoBehaviour {
     [SerializeField] GameObject actor2;
     [SerializeField] DialogManager dialogManager;
     [SerializeField] InventoryManager inventoryManager;
+    //[SerializeField] JsonLoader _jl;
     G _g;
     const int MIN_SCORE = 1; // TODO: move to G
     Inventory_t inventory = new Inventory_t();
@@ -31,11 +32,13 @@ public class Court : MonoBehaviour {
 
     public void Start() {
         _g = FindObjectOfType<G>();
+        //_jl = GetComponent<JsonLoader>();
+        //dialogManager._jl = _jl;
 
-        JsonLoader.LoadInfoFromFile(dialogManager.questionsFile.name, ref questions);
+        JsonLoader.LoadInfoFromFile(dialogManager.questionsFile, ref questions);
         Debug.Log("Load - " + questions.Count + " questions");
 
-        JsonLoader.LoadInfoFromFile(dialogManager.itemsFile.name, ref items);
+        JsonLoader.LoadInfoFromFile(dialogManager.itemsFile, ref items);
         Debug.Log("Load - " + items.Count + " items");
 
         LoadInventory();
