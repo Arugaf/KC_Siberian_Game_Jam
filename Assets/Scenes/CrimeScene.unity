@@ -502,6 +502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebcbae90f1ad024e8fd446aff180d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _inventory: {fileID: 1284080058}
+  _inventoryUI: {fileID: 1284080057}
   courtTime: {fileID: 72618255}
 --- !u!95 &39218227
 Animator:
@@ -1489,9 +1491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97748e0c906e4ee3b81c60ccf5c744f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  itemName: 
-  itemSprite: {fileID: 0}
 --- !u!1 &237423823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,7 +2847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b600165d669b440a9a046229dbc315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 1284080057}
+  inventory: {fileID: 1284080058}
 --- !u!4 &716465304
 Transform:
   m_ObjectHideFlags: 0
@@ -3614,8 +3613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  itemName: Oilcan
-  itemSprite: {fileID: 21300000, guid: b5d0b9ddc89479f4b8be5f648802a2cc, type: 3}
+  itemName: Tape
+  itemSprite: {fileID: 21300000, guid: 85327a8f6c2760e4c9e455ffdceaf00b, type: 3}
 --- !u!1 &897513779
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,6 +4843,7 @@ GameObject:
   - component: {fileID: 1284080055}
   - component: {fileID: 1284080056}
   - component: {fileID: 1284080057}
+  - component: {fileID: 1284080058}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -4917,6 +4917,20 @@ MonoBehaviour:
   - {fileID: 1780819303}
   - {fileID: 95009404}
   - {fileID: 588967387}
+--- !u!114 &1284080058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284080054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf3f12dd848e4755a2380356526399d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  capacity: 5
+  _inventory: []
 --- !u!1 &1289404017
 GameObject:
   m_ObjectHideFlags: 0

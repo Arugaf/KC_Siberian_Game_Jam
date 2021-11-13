@@ -30,7 +30,6 @@ public class Court : MonoBehaviour {
     bool isOver = false;
 
     public void Start() {
-        Debug.Log("");
         _g = FindObjectOfType<G>();
 
         JsonLoader.LoadInfoFromFile(dialogManager.questionsFile.name, ref questions);
@@ -72,7 +71,14 @@ public class Court : MonoBehaviour {
     }
     void LoadInventory() {
         // TODO: load data from G
-        inventory.items = new List<int>(){1,2,3,4,5};
+        if(_g != null && _g.inventory != null)
+            inventory.items = _g.inventory;
+        else
+            inventory.items = new List<int>(){1,2,3,4,5};
+
+        foreach(var i in inventory.items)
+            Debug.Log("inv - " + i);
+        
         inventory.itemStatus = new List<bool>(){true,true,true,true,true};
         inventory.itemsSprites = new List<string>() {
             FindItem(inventory.items[0]).icon,
@@ -81,7 +87,6 @@ public class Court : MonoBehaviour {
             FindItem(inventory.items[3]).icon,
             FindItem(inventory.items[4]).icon    
         };
-        Debug.Log("Sprite - " + FindItem(inventory.items[0]).icon);
         inventoryManager.InitItems(inventory.items, inventory.itemsSprites);
     }
 
@@ -127,11 +132,15 @@ public class Court : MonoBehaviour {
     }
 
     void GetVerdict() {
+        Debug.Log("Score - " + score);
         if(score < MIN_SCORE)
             phrasesQueue.Enqueue(dialogManager.guiltyID);
         else
             phrasesQueue.Enqueue(dialogManager.notGuiltyID);
         isOver = true;
+
+        if(_g != null)
+            _g.isHappyEnd = score >= MIN_SCORE;
     }
 
     int GetItemID(int index) {
@@ -139,10 +148,10 @@ public class Court : MonoBehaviour {
         return inventory.items[index];
     }
 
-    public void ClickInventory(int index) { //GameObject _go
+    public void ClickInventory(int index) {
         inventory.pickedItem = index;
         Debug.Log("Item - " + index + " is picked");
-        inventory.itemStatus[index] = false;//inventory.items.RemoveAt(index);
+        inventory.itemStatus[index] = false;
         inventoryManager.DeleteItem(index);
         InventoryHandler();//hide panels
         phrasesQueue.Enqueue(items.Find(item => item.ID.Equals(GetItemID(index))).phrase);
@@ -156,22 +165,15 @@ public class Court : MonoBehaviour {
         var _q = questions[currQuestion];
         if(pickedID == _q.keyID) {
             phrasesQueue.Enqueue(_q.rightAnswerReactionID);
+            ++score;
             Debug.Log("Right answer - " + phrasesQueue.Peek());
         }
         else {
             phrasesQueue.Enqueue(_q.wrongAnswerReactionID);
+            --score;
             Debug.Log("Wrong answer - " + phrasesQueue.Peek());
         }
         if(currQuestion < questions.Count -1)
             currQuestion++;
     }
-
-    // public void PickItem(int itemID) {
-    //     inventory.pickedItem = itemID;
-    //     Debug.Log("Item - " + itemID + " is picked");
-    // }
-
-    // public void SwitchDialog() {
-    //     dialogManager.ShowNext();
-    // }
 }

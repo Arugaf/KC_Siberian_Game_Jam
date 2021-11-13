@@ -2,19 +2,25 @@ using Player;
 using UnityEngine;
 
 public class Ending : MonoBehaviour {
-    private G _g;
+    G _g;
 
-    private PlayerInventory _inventory;
+    [SerializeField] GameObject happyEnd;
+    [SerializeField] GameObject badEnd;
 
     public void Start() {
         _g = FindObjectOfType<G>();
-        _inventory = FindObjectOfType<PlayerInventory>();
+        if(_g != null)
+            ShowEnding(_g.isHappyEnd);
+    }
+
+    public void ShowEnding(bool _b) {
+        happyEnd.SetActive(_b);
+        badEnd.SetActive(!_b);
     }
 
     public void ChangeState() {
         if(_g != null) {
             _g.CurrentState = GameState.Menu;
-            _inventory.Reset();
             _g.sceneController.SwitchScene(_g.CurrentState);
         }
     }

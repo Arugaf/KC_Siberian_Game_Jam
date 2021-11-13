@@ -1,4 +1,5 @@
 using Player;
+using System.Collections.Generic;
 using UnityEngine;
 
 public enum GameState {
@@ -15,7 +16,9 @@ public class G : MonoBehaviour {
 
     public GameState CurrentState { set; get; }
 
-    public PlayerInventory inventory;
+    public bool isHappyEnd;
+
+    public List<int> inventory;
 
     public void Start() {
         DontDestroyOnLoad(this);

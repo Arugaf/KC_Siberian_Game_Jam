@@ -6,7 +6,7 @@ namespace Player {
     public class PlayerInventory : MonoBehaviour {
         [SerializeField] private int capacity = 5;
         
-        private List<Item> _inventory = new List<Item>();
+        [SerializeField] List<Item> _inventory = new List<Item>();
 
         public bool AddItem(string itemName, Item item) {
             if (_inventory.Count >= capacity) {
@@ -20,6 +20,14 @@ namespace Player {
 
         public List<Item> GetItems() {
             return _inventory;
+        }
+
+        public List<int> GetItemsID() {
+            var ids = new List<int>();
+            for(var i=0;i < _inventory.Count; i++) {
+                ids.Add(_inventory[i].id);
+            }
+            return ids;
         }
 
         public bool IsFull() {
