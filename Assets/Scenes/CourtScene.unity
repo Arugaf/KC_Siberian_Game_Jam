@@ -229,9 +229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9721f95dbb1e95649a8f2ae6faa8b5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phrasesFile: {fileID: 4900000, guid: f7baa38850ae62843b6a86e5d7bf9b56, type: 3}
-  questionsFile: {fileID: 4900000, guid: 2eb8e742553f1874baa5c0d053abf3b0, type: 3}
-  itemsFile: {fileID: 4900000, guid: 1a9d3904030b6924caea44314e230f5a, type: 3}
+  phrasesFile: /testPhrases.json
+  questionsFile: /testQuestions.json
+  itemsFile: /testItems.json
   guiltyID: 1
   notGuiltyID: 2
   startPhraseID: 1
