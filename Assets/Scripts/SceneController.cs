@@ -13,7 +13,10 @@ public class SceneController : MonoBehaviour {
             case GameState.Empty:
                 break;
             case GameState.Menu:
-                StartScene(gameScenes[0].name);
+                StartScene("Menu");
+                break;
+            case GameState.Intro:
+                StartScene("Intro");
                 break;
             case GameState.Crime:
                 StartScene("CrimeScene");
@@ -25,7 +28,7 @@ public class SceneController : MonoBehaviour {
                 StartScene("Ending");
                 break;
             default:
-                throw new Exception("Incorrect game state!");
+                throw new Exception("Incorrect game state! " + state);
         }
     }
 

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 1808a122f49a76d4f9f2c2a4fe6bc2b6
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 5db04a33e987c62408e44bd969d8e747
+  - enabled: 1
     path: Assets/Scenes/CrimeScene.unity
     guid: fa1db4084e671e94b9ff6f5b4f5e8bcd
   - enabled: 1

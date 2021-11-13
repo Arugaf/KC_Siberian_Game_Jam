@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 namespace Items {
     public class InventoryUI : MonoBehaviour {
-        [SerializeField] private List<Image> items;
+        [SerializeField] List<Image> items;
 
-        private int _index = 0;
+        int _index = 0;
 
         public void ChangeItem(Sprite image) {
             items[_index++].sprite = image;

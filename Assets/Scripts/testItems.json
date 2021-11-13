@@ -1,14 +1,72 @@
 [
 {
-    "ID": 1,
+    "ID": 0,
     "name": "Item 1",
     "description": "This is an item 1",
-    "icon": "/path/to/icon.png"
+    "icon": "Sprites/Items/Axe",
+    "phrase": 11
+},
+{
+    "ID": 1,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Booze",
+    "phrase": 24
 },
 {
     "ID": 2,
-    "name": "Actor 2",
+    "name": "Item 2",
     "description": "This is an item 2",
-    "icon": "/path/to/icon.png"
-}
+    "icon": "Sprites/Items/BotHead",
+    "phrase": 3
+},
+{
+    "ID": 3,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Oilcan",
+    "phrase": 23
+},
+  {
+    "ID": 4,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Tape",
+    "phrase": 19
+  },
+  {
+    "ID": 5,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Paper",
+    "phrase": 19
+  },
+  {
+    "ID": 6,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Shoe",
+    "phrase": 19
+  },
+  {
+    "ID": 7,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Book",
+    "phrase": 19
+  },
+  {
+    "ID": 8,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Rope",
+    "phrase": 19
+  },
+  {
+    "ID": 9,
+    "name": "Item 2",
+    "description": "This is an item 2",
+    "icon": "Sprites/Items/Heart",
+    "phrase": 19
+  }
 ]
