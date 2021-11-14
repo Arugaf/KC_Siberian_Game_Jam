@@ -232,8 +232,8 @@ MonoBehaviour:
   phrasesFile: /testPhrases.json
   questionsFile: /testQuestions.json
   itemsFile: /testItems.json
-  guiltyID: 1
-  notGuiltyID: 2
+  guiltyID: 28
+  notGuiltyID: 29
   startPhraseID: 1
   firstPlayerPhraseID: 1
   dialogField: {fileID: 2027597560}
@@ -2558,8 +2558,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f256486f8f6b4944790509dfea33d668, type: 2}
+  m_sharedMaterial: {fileID: -8506428976132395503, guid: f256486f8f6b4944790509dfea33d668, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2927,8 +2927,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f256486f8f6b4944790509dfea33d668, type: 2}
+  m_sharedMaterial: {fileID: -8506428976132395503, guid: f256486f8f6b4944790509dfea33d668, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

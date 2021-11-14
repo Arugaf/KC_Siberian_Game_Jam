@@ -1,72 +1,72 @@
 [
-{
+  {
     "ID": 0,
-    "name": "Item 1",
-    "description": "This is an item 1",
+    "name": "Axe",
+    "description": "This is an Axe",
     "icon": "Sprites/Items/Axe",
     "phrase": 11
-},
-{
+  },
+  {
     "ID": 1,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Booze",
+    "description": "This is a bottle of booze",
     "icon": "Sprites/Items/Booze",
-    "phrase": 24
-},
-{
+    "phrase": 7
+  },
+  {
     "ID": 2,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "BotHead",
+    "description": "This is a head of a robot",
     "icon": "Sprites/Items/BotHead",
-    "phrase": 3
-},
-{
+    "phrase": 22
+  },
+  {
     "ID": 3,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Oilcan",
+    "description": "This is an Oilcan",
     "icon": "Sprites/Items/Oilcan",
-    "phrase": 23
-},
+    "phrase": 26
+  },
   {
     "ID": 4,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Tape",
+    "description": "This is a Tape",
     "icon": "Sprites/Items/Tape",
-    "phrase": 19
+    "phrase": 23
   },
   {
     "ID": 5,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Paper",
+    "description": "This is a piece of a magazine",
     "icon": "Sprites/Items/Paper",
-    "phrase": 19
+    "phrase": 25
   },
   {
     "ID": 6,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Shoe",
+    "description": "This is a Shoe",
     "icon": "Sprites/Items/Shoe",
-    "phrase": 19
+    "phrase": 15
   },
   {
     "ID": 7,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Book",
+    "description": "This is a Book",
     "icon": "Sprites/Items/Book",
-    "phrase": 19
+    "phrase": 24
   },
   {
     "ID": 8,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Rope",
+    "description": "This is a Rope",
     "icon": "Sprites/Items/Rope",
     "phrase": 19
   },
   {
     "ID": 9,
-    "name": "Item 2",
-    "description": "This is an item 2",
+    "name": "Heart",
+    "description": "This is a Heart",
     "icon": "Sprites/Items/Heart",
-    "phrase": 19
+    "phrase": 3
   }
 ]
